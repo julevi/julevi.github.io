@@ -14,8 +14,7 @@ const Apresentacao = () => {
           </div>
           <button href="#" className="cv">Download do CV</button>
         </div>
-        <div className="foto"><img src="/images/me.png" alt="Juliana Prado" /></div>
-
+        <div className="foto"><img src="images/me.png" alt="Juliana Prado" /></div>
     </section>
   );
 }

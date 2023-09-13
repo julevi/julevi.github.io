@@ -30,7 +30,7 @@ const Sobre = () => {
 
 
         </div>
-        <img className='imagem' src="/images/desenho.png" alt="desenho" />
+        <img className='imagem' src="images/desenho.png" alt="desenho" />
       </div>
       <div className="custom-shape-divider-top-1689120345">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
