@@ -1,0 +1,65 @@
+.animado span {
+    position: relative;
+}
+
+.animado span::before {
+    content: "";
+    color: #4e0c51;
+    animation: palavras 12s infinite;
+}
+
+.animado span::after {
+    content: "";
+    position: absolute;
+    height: 80%;
+    border-left: 2px solid #4e0c51;
+    right: -10px;
+    opacity: 1;
+    animation: cursor .5s infinite, digita 20s infinite steps(15);
+    width: calc(100% + 18px);
+    background-color: #fff;
+}
+
+@keyframes digita {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 18px);
+    }
+}
+
+@keyframes cursor {
+    0% {
+        border-left: 2px solid #fff;
+    }
+}
+
+@keyframes palavras {
+    0%, 33% {
+        content: "Full Stack";
+    }
+    34%, 67% {
+        content: "Back end";
+    }
+    68%, 100% {
+        content: "Front end";
+    }
+}
+
+.floating-arrow {
+    animation: floating 1.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
