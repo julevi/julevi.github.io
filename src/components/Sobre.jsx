@@ -1,4 +1,5 @@
 import React from 'react';
+import desenho from '../assets/images/desenho.png'
 
 const Sobre = () => {
   return (
@@ -13,7 +14,7 @@ const Sobre = () => {
               Além do desenvolvimento web, adquiri experiência acadêmica em diversas áreas, incluindo microserviços e containers (Docker), business intelligence e big data, desenvolvimento mobile, desenvolvimento de banco de dados e segurança da informação. Também tive a oportunidade de explorar outras tecnologias, como Java, Python, C#, Spring Boot, .NET, MySQL e Firebase.<br /><br />
             </p>
           </div>
-          <img className='w-96' src="images/desenho.png" alt="desenho" />
+          <img className='w-96' src={desenho} alt="desenho" />
         </div>
       </div>
   
