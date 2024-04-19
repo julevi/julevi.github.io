@@ -1,6 +1,7 @@
 .botao1 {
     border-radius: 9999px;
     background-color: #6cbeef;
+    padding: 8px 16px;
     cursor: pointer;
 }
 
@@ -26,6 +27,19 @@
 }
 
 .light-mode p {
+    color: #000000;
+}
+
+label {
+    padding: 10px;
+}
+
+.dark-mode label {
+    color: #ffffff;
+
+}
+
+.light-mode label {
     color: #000000;
 }
 
@@ -68,4 +82,28 @@
 .icone {
     width: 80px;
     fill: #65aee8;
+}
+
+
+.light-mode .caixaForm {
+    border: 2px solid #6cbeef;
+    border-radius: 20px;
+    padding: 8px 16px;
+    background-color: transparent;
+}
+
+.dark-mode .caixaForm {
+    border: 2px solid #6cbeef;
+    border-radius: 20px;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: white;
+}
+
+.light-mode .caixaForm:focus {
+    background-color: #f0f0f0;
+}
+
+.dark-mode .caixaForm:focus {
+    background-color: #525252;
 }
