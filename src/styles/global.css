@@ -1,20 +1,71 @@
-.custom-shape-divider-bottom-1702161903 {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+.botao1 {
+    border-radius: 9999px;
+    background-color: #6cbeef;
+    cursor: pointer;
 }
 
-.custom-shape-divider-bottom-1702161903 svg {
-    position: relative;
-    display: block;
-    width: calc(150% + 1.3px);
-    height: 120px;
+.botao2 {
+    border: 2px solid #6cbeef;
+    border-radius: 9999px;
+    padding: 8px 16px;
+    cursor: pointer;
 }
 
-.custom-shape-divider-bottom-1702161903 .shape-fill {
-    fill: gray;
+
+.dark-mode h1 {
+    color: #ffffff;
+}
+
+.light-mode h1 {
+    color: #000000;
+}
+
+.dark-mode p {
+    color: #ffffff;
+
+}
+
+.light-mode p {
+    color: #000000;
+}
+
+.dark-mode .fundo1 {
+    background-color: #181818;
+}
+
+.dark-mode .fundo2 {
+    background-color: #2b2a2a;
+}
+
+.light-mode .fundo1 {
+    background-color: white;
+}
+
+.light-mode .fundo2 {
+    background-color: #ebeaea;
+}
+
+.dark-mode span {
+    color: #6cbeef;
+}
+
+.light-mode span {
+    color: #6cbeef;
+}
+
+.dark-mode button {
+    color: white;
+}
+
+.dark-mode .menu {
+    background-color: #2b2a2a;
+}
+
+.light-mode .menu {
+    background-color: #6cbeef;
+}
+
+.icone {
+    width: 80px;
+    fill: #65aee8;
 }

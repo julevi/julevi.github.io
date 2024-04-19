@@ -4,7 +4,6 @@
 
 .animado span::before {
     content: "";
-    color: #4e0c51;
     animation: palavras 12s infinite;
 }
 
@@ -12,7 +11,7 @@
     content: "";
     position: absolute;
     height: 80%;
-    border-left: 2px solid #4e0c51;
+    border-left: 2px solid #6cbeef;
     right: -10px;
     opacity: 1;
     animation: cursor .5s infinite, digita 20s infinite steps(15);
@@ -20,46 +19,86 @@
     background-color: #fff;
 }
 
+.dark-mode .animado span::after {
+    background-color: #181818;
+}
+
 @keyframes digita {
-    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
         width: 0;
     }
-    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
         width: calc(100% + 18px);
     }
 }
 
-@keyframes cursor {
+ @keyframes cursor{
     0% {
         border-left: 2px solid #fff;
     }
 }
 
 @keyframes palavras {
-    0%, 33% {
+
+    0%,
+    33% {
         content: "Full Stack";
     }
-    34%, 67% {
-        content: "Back end";
+
+    34%,
+    67% {
+        content: "Back-End";
     }
-    68%, 100% {
-        content: "Front end";
+
+    68%,
+    100% {
+        content: "Front-End";
     }
 }
 
 .floating-arrow {
-    animation: floating 1.5s ease-in-out infinite alternate;
-  }
-  
-  @keyframes floating {
+    animation: floating 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes floating {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
+
     50% {
-      transform: translateY(-10px);
+        transform: translateY(-10px);
     }
+
     100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
-  }
-  
+}
+
+.animacaoToque:hover {
+    transition-property: transform;
+    transform: scale(1.1);
+}
+
+.animacaoToque {
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}

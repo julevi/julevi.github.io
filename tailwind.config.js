@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        roxo: "#4e0c51",
+        azul: "#65aee8",
       },
     },
   },

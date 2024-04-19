@@ -2,10 +2,10 @@ import React from 'react';
 
 const Sobre = () => {
   return (
-    <section className="bg-gray-300">
+    <section className="fundo2">
       <div className='container max-w-7xl mx-auto px-12'>
-        <div className='flex flex-col lg:flex-row justify-center items-center lg:py-16 lg:gap-20'>
-          <div className='mt-10 lg:mt-0'>
+        <div className='flex flex-col md:flex-row justify-center items-center md:py-16 md:gap-20'>
+          <div className='mt-10 md:mt-0 text-center md:text-left'>
             <h1 className='text-4xl mb-4 font-bold'>Sobre Mim</h1>
             <p className="">
               Olá, meu nome é Juliana e sou uma desenvolvedora full-stack. Graduada em Análise e Desenvolvimento de Sistemas pela UniAmérica, além de técnica em Desenvolvimento de Sistemas pelo Senai-SE.<br /><br />
