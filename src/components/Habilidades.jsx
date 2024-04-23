@@ -4,7 +4,7 @@ function Habilidades() {
 
   return (
     <section className="fundo2" id='habilidades'>
-      <div className="container max-w-7xl mx-auto py-10">
+      <div className="container max-w-7xl mx-auto py-20">
         <h1 className='text-4xl mb-10 font-bold text-center'>Habilidades</h1>
         <div className='flex justify-center items-center'>
           <div className='grid grid-cols-3 md:grid-cols-5 gap-5 lg:gap-20'>

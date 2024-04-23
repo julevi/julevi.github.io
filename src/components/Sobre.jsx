@@ -4,10 +4,10 @@ import desenho from '../assets/images/desenho.png'
 const Sobre = () => {
   return (
     <section className="fundo2" id='sobre'>
-      <div className='container max-w-7xl mx-auto px-12'>
-        <div className='flex flex-col md:flex-row justify-center items-center md:py-16 md:gap-20'>
+      <div className='container max-w-7xl mx-auto px-12 py-20'>
+        <div className='flex flex-col md:flex-row justify-center items-center md:gap-20'>
           <div className='mt-10 md:mt-0 text-center md:text-left'>
-            <h1 className='text-4xl mb-4 font-bold'>Sobre Mim</h1>
+            <h1 className='text-4xl mb-5 font-bold'>Sobre Mim</h1>
             <p className="">
               Olá, meu nome é Juliana e sou uma desenvolvedora full-stack. Graduada em Análise e Desenvolvimento de Sistemas pela UniAmérica, além de técnica em Desenvolvimento de Sistemas pelo Senai-SE.<br /><br />
               Minha trajetória no desenvolvimento teve início em 2019, onde trabalhei com tecnologias front-end: JavaScript, HTML5, CSS3 e React.js. Logo depois, fui aprofundando os meus conhecimentos em back-end: Node.js, PostgreSQL, Git e criação de APIs.<br /><br />

@@ -21,7 +21,7 @@ const Apresentacao = () => {
         <div className="flex flex-col-reverse lg:flex-row items-center justify-center ">
           <div className="">
             <p className="text-2xl sm:text-3xl lg:text-4xl text-center lg:text-left"> <i>Olá, eu sou Juliana!</i> </p>
-            <h1 className="animado text-4xl sm:text-6xl lg:text-8xl mb-0 mt-2 font-bold text-center lg:text-left"><span className=''></span><br />Developer</h1>
+            <h1 className="animado text-4xl sm:text-6xl lg:text-8xl mb-0 mt-2 font-bold text-center lg:text-left"><span className=''></span><br /><p className=''>Developer</p></h1>
             <div className='flex flex-col items-center justify-center lg:items-start'>
               <div className="flex mt-4 gap-4">
                 <a href="https://github.com/julevi" target="_blank" rel="noopener noreferrer" className='w-9 md:w-10'>

@@ -30,7 +30,7 @@ const Contato = () => {
 
     return (
         <section className="fundo1" id='contato'>
-            <div className="container max-w-5xl mx-auto py-10">
+            <div className="container max-w-5xl mx-auto py-20">
 
                 <div className='flex flex-row justify-center items-center gap-18 xl:gap-28'>
                     <img className='hidden lg:block w-96 mx-5' src={desenho} alt="desenho" />
