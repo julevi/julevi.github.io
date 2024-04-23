@@ -3,7 +3,7 @@ import desenho from '../assets/images/desenho.png'
 
 const Sobre = () => {
   return (
-    <section className="fundo2">
+    <section className="fundo2" id='sobre'>
       <div className='container max-w-7xl mx-auto px-12'>
         <div className='flex flex-col md:flex-row justify-center items-center md:py-16 md:gap-20'>
           <div className='mt-10 md:mt-0 text-center md:text-left'>
@@ -14,7 +14,7 @@ const Sobre = () => {
               Além do desenvolvimento web, adquiri experiência acadêmica em diversas áreas, incluindo microserviços e containers (Docker), business intelligence e big data, desenvolvimento mobile, desenvolvimento de banco de dados e segurança da informação. Também tive a oportunidade de explorar outras tecnologias, como Java, Python, C#, Spring Boot, .NET, MySQL e Firebase.<br /><br />
             </p>
           </div>
-          <img className='w-96' src={desenho} alt="desenho" />
+          <img className='w-96 my-10 lg:mt-0' src={desenho} alt="desenho" />
         </div>
       </div>
   

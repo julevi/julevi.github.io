@@ -1,11 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
+import xsimbolo from '../assets/icons/simbolo-x.png';
 import menu from '../assets/icons/menu.png';
 
 const Menu = ({ darkMode, toggleDarkMode }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const yOffset = section.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({ top: yOffset, behavior: 'smooth' });
+    }
+  }
+
   return (
-    <header className={`menu w-full z-10 overflow-hidden`}>
+    <header className={`menu w-full z-10 overflow-hidden fixed shadow-lg`}>
       <div className="container max-w-4xl mx-auto px-4 h-20 flex items-center justify-between">
-        <img src={menu} alt="" className='w-8 cursor-pointer animacaoToque' />
+        <img src={menu} alt="" className='w-8 cursor-pointer animacaoToque' onClick={toggleMenu} />
         <div className="cursor-pointer text-xl text-white animacaoToque">
           Juliana Prado
         </div>
@@ -16,6 +35,18 @@ const Menu = ({ darkMode, toggleDarkMode }) => {
           </button>
         </div>
       </div>
+
+      {isMenuOpen && (
+        <div className="h-screen">
+          <ul className='text-white text-center flex flex-col gap-5 text-3xl pt-28'>
+            <li><a className='cursor-pointer font-bold' onClick={() => { closeMenu(); scrollToSection('home') }}>Home</a></li>
+            <li><a className='cursor-pointer font-bold' onClick={() => { closeMenu(); scrollToSection('sobre') }}>Sobre</a></li>
+            <li><a className='cursor-pointer font-bold' onClick={() => { closeMenu(); scrollToSection('projetos') }}>Projetos</a></li>
+            <li><a className='cursor-pointer font-bold' onClick={() => { closeMenu(); scrollToSection('habilidades') }}>Habilidades</a></li>
+            <li><a className='cursor-pointer font-bold' onClick={() => { closeMenu(); scrollToSection('contato') }}>Contato</a></li>
+          </ul>
+        </div>
+      )}
     </header>
   );
 }

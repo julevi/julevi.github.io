@@ -24,18 +24,17 @@ const Contato = () => {
             setMessage('');
         })
         .catch((error) => {
-            console.error("Erro ao enviar o email:", error);
             alert("Falha ao enviar o email, erro: " + error.message);
         });
     }
 
     return (
-        <section className="fundo1">
+        <section className="fundo1" id='contato'>
             <div className="container max-w-5xl mx-auto py-10">
 
-                <div className='flex flex-row justify-center items-center gap-28'>
-                    <img className='hidden lg:block w-96' src={desenho} alt="desenho" />
-                    <form onSubmit={sendEmail} className='flex flex-col justify-center items-center w-full px-5'>
+                <div className='flex flex-row justify-center items-center gap-18 xl:gap-28'>
+                    <img className='hidden lg:block w-96 mx-5' src={desenho} alt="desenho" />
+                    <form onSubmit={sendEmail} className='flex flex-col justify-center items-center w-full mx-5'>
 
                         <h1 className='text-4xl mb-5 font-bold text-center'>Contato</h1>
                         <input className='caixaForm my-2 w-full' type="text" id="nome" name="nome" placeholder="Nome:" onChange={(e) => setName(e.target.value)} value={name} required />

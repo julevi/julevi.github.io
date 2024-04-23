@@ -3,7 +3,7 @@ import React from 'react';
 function Habilidades() {
 
   return (
-    <section className="fundo2">
+    <section className="fundo2" id='habilidades'>
       <div className="container max-w-7xl mx-auto py-10">
         <h1 className='text-4xl mb-10 font-bold text-center'>Habilidades</h1>
         <div className='flex justify-center items-center'>

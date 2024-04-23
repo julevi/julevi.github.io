@@ -107,3 +107,20 @@ label {
 .dark-mode .caixaForm:focus {
     background-color: #525252;
 }
+
+
+.light-mode a{
+    color: black;
+}
+
+.dark-mode a{
+    color:white;
+}
+
+.light-mode a:hover{
+    color:#525252;
+}
+
+.dark-mode a:hover{
+    color:#65aee8;
+}
