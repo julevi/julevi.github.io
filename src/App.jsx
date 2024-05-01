@@ -7,6 +7,7 @@ import Rodape from './components/Rodape';
 import Habilidades from './components/Habilidades';
 import Contato from './components/Contato';
 
+
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
 

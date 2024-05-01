@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
+import {motion} from "framer-motion"
+import { fadeInLeft, scalein, opacidade} from '../../motionConfig';
 
 const Projetos = () => {
   const [projetos, setProjetos] = useState([]);
@@ -30,12 +32,12 @@ const Projetos = () => {
   }, []);
 
   return (
-    <section className="fundo1 flex items-center justify-center py-20">
+    <section className="fundo1 flex items-center justify-center py-20 px-7" id="projetos">
       <div className="container max-w-7xl mx-auto">
-        <h1 className='text-4xl mb-10 font-bold text-center'>Projetos</h1>
+        <motion.h1 className='text-4xl mb-10 font-bold text-center' {...scalein}>Projetos</motion.h1>
         <div className='grid lg:grid-cols-3 gap-16 grid-col-1'>
           {projetos.map((projeto, index) => (
-            <div key={index} className='border border-azul flex flex-col items-center justify-center animacaoToque'>
+            <motion.div key={index} className='border border-azul flex flex-col items-center justify-center animacaoToque' {...opacidade}>
             <div className='imagem-container'>
               <img src={projeto.imagem} className='w-full' alt="" />
             </div>
@@ -43,7 +45,7 @@ const Projetos = () => {
               <h1 className='text-2xl font-bold my-2'>{projeto.nome}</h1>
               <a href={projeto.link} className="botao1 px-8 py-2 animacaoToque" target="_blank">Acesse aqui!</a>
             </div>
-          </div>
+          </motion.div>
           ))}
         </div>
         <div className='flex items-center justify-center mt-10'>
