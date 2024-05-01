@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import xsimbolo from '../assets/icons/marca-x.png';
 import menu from '../assets/icons/menu.png';
-import {motion} from "framer-motion"
-import { fadeInLeft, scalein, opacidade} from '../../motionConfig';
+import { motion } from "framer-motion"
+import { fadeInLeft, scalein, opacidade } from '../../motionConfig';
 
 const Menu = ({ darkMode, toggleDarkMode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuFixed, setIsMenuFixed] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,6 +15,19 @@ const Menu = ({ darkMode, toggleDarkMode }) => {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY;
+      setIsMenuFixed(position > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
@@ -24,7 +38,7 @@ const Menu = ({ darkMode, toggleDarkMode }) => {
   }
 
   return (
-    <header className={`menu w-full z-10 overflow-hidden shadow-lg`}>
+    <header className={`menu w-full z-10 overflow-hidden shadow-lg ${isMenuFixed ? 'fixed top-0 left-0 bg-white' : ''}`}>
       <motion.div className="container max-w-4xl mx-auto px-4 h-20 flex items-center justify-between" {...opacidade}>
         <img src={isMenuOpen ? xsimbolo : menu} alt="" className='w-8 cursor-pointer animacaoToque' onClick={toggleMenu} />
         <div className="cursor-pointer text-xl text-white animacaoToque">
@@ -40,7 +54,7 @@ const Menu = ({ darkMode, toggleDarkMode }) => {
 
       {isMenuOpen && (
         <div className="h-screen">
-          <ul className='text-white text-center flex flex-col gap-5 text-3xl pt-28'>
+          <ul className='text-black text-center flex flex-col gap-5 text-3xl pt-28'>
             <li><a className='cursor-pointer font-bold listaMenu' onClick={() => { closeMenu(); scrollToSection('home') }}>Home</a></li>
             <li><a className='cursor-pointer font-bold listaMenu' onClick={() => { closeMenu(); scrollToSection('sobre') }}>Sobre</a></li>
             <li><a className='cursor-pointer font-bold listaMenu' onClick={() => { closeMenu(); scrollToSection('projetos') }}>Projetos</a></li>
