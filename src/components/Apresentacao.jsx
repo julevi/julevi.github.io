@@ -6,7 +6,7 @@ import me from '../assets/images/me.png'
 import seta from '../assets/images/seta.png'
 import {motion} from "framer-motion"
 import { fadeInLeft, scalein, opacidade} from '../../motionConfig';
-
+import pdf from '../assets/cv-Juliana-Prado.pdf'
 const Apresentacao = () => {
 
   function scrollToSection(sectionId) {
@@ -36,7 +36,8 @@ const Apresentacao = () => {
                   <img className="mt-5 lg:mt-0 sm:w-auto animacaoToque" src={whatsapp} alt="whatsapp" />
                 </a>
               </div>
-              <button href="#" className="mt-4 botao2 px-8 py-2 animacaoToque">Download do CV</button>
+              <a href={pdf} download className="mt-4 botao2 px-8 py-2 animacaoToque">Download do CV</a>
+
             </motion.div>
           </div>
           <motion.div className="px-20 lg:px-12 lg:ml-8 mb-2 lg:mb-0" {...opacidade}><img src={me} alt="Juliana Prado" /></motion.div>
