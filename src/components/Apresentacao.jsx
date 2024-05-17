@@ -18,7 +18,7 @@ const Apresentacao = () => {
   }
 
   return (
-    <section className="bg-cinza flex items-center justify-center fundo1" id='home'>
+    <section className="bg-cinza flex items-center justify-center fundo1 mt-10" id='home'>
       <div className="container max-w-7xl mx-auto flex flex-col items-center justify-center h-screen mt-0">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-center ">
           <div className="">
