@@ -5,7 +5,7 @@ Este é um projeto de site pessoal de portfólio próprio onde mostra todas as m
 
 Acesse o site em: [Portfólio Juliana Prado](https://julianaprado.dev/)
 
-[![Screenshot do site](https://firebasestorage.googleapis.com/v0/b/projetos-fullstack.appspot.com/o/projetoPortfolio.png?alt=media&token=56765fae-a583-48ab-ad48-8b157eda961b)](https://saguistudio.com/)
+[![Screenshot do site](https://firebasestorage.googleapis.com/v0/b/projetos-fullstack.appspot.com/o/projetoPortfolio.png?alt=media&token=56765fae-a583-48ab-ad48-8b157eda961b)]
 
 ## Visão Geral
 
