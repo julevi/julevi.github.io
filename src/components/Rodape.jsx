@@ -8,7 +8,7 @@ const Rodape = () => {
                 <div className='flex items-center justify-center pt-5 flex-col md:flex-row'>
 
                     <div className='flex items-center justify-between w-full md:w-auto flex-col md:flex-row'>
-                        <p className='text-white text-center md:mr-4 my-2 md:my-0'> © 2024 Juliana Prado. All Rights Reserved.</p>
+                        <p className='text-white text-center md:mr-4 my-2 md:my-0'> © 2025 Juliana Prado. All Rights Reserved.</p>
                     </div>
 
                 </div>

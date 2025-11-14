@@ -38,15 +38,15 @@ const Contato = () => {
                     <motion.img className='hidden lg:block w-96 mx-5' {...scalein} src={desenho} alt="desenho" />
                     <form onSubmit={sendEmail} className='flex flex-col justify-center items-center w-full mx-5'>
 
-                        <motion.h1 className='text-4xl mb-5 font-bold text-center' {...scalein}>Contato</motion.h1>
+                        <motion.h1 className='text-4xl mb-5 font-bold text-center' {...scalein}>Contact</motion.h1>
                         <motion.div {...opacidade}>
-                            <input className='caixaForm my-2 w-full' type="text" id="nome" name="nome" placeholder="Nome:" onChange={(e) => setName(e.target.value)} value={name} required />
+                            <input className='caixaForm my-2 w-full' type="text" id="nome" name="nome" placeholder="Name:" onChange={(e) => setName(e.target.value)} value={name} required />
 
                             <input className='caixaForm my-2 w-full' type="email" id="email" name="email" placeholder="Email:" onChange={(e) => setEmail(e.target.value)} value={email} required />
 
-                            <textarea className='caixaForm my-2 w-full' id="mensagem" name="mensagem" placeholder="Digite sua mensagem:" rows="8" onChange={(e) => setMessage(e.target.value)} value={message} required></textarea>
+                            <textarea className='caixaForm my-2 w-full' id="mensagem" name="mensagem" placeholder="Type your message:" rows="8" onChange={(e) => setMessage(e.target.value)} value={message} required></textarea>
                         </motion.div>
-                        <button type="submit" className='botao1 mt-5 animacaoToque'>Enviar</button>
+                        <button type="submit" className='botao1 mt-5 animacaoToque'>Send Email</button>
 
 
                     </form>

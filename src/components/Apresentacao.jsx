@@ -6,7 +6,6 @@ import me from '../assets/images/me.png'
 import seta from '../assets/images/seta.png'
 import {motion} from "framer-motion"
 import { fadeInLeft, scalein, opacidade} from '../../motionConfig';
-import pdf from '../assets/cv-Juliana-Prado.pdf'
 const Apresentacao = () => {
 
   function scrollToSection(sectionId) {
@@ -22,7 +21,7 @@ const Apresentacao = () => {
       <div className="container max-w-7xl mx-auto flex flex-col items-center justify-center h-screen mt-0">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-center ">
           <div className="">
-            <motion.p className="text-2xl sm:text-3xl lg:text-4xl text-center lg:text-left" {...fadeInLeft}> <i>Olá, eu sou Juliana!</i> </motion.p>
+            <motion.p className="text-2xl sm:text-3xl lg:text-4xl text-center lg:text-left" {...fadeInLeft}> <i>Hello, world! I'm Juliana!</i> </motion.p>
             <h1 className="animado text-4xl sm:text-6xl lg:text-8xl mb-0 mt-2 font-bold text-center lg:text-left" ><span className=''></span><br /><p className=''>Developer</p></h1>
             <motion.div className='flex flex-col items-center justify-center lg:items-start' {...opacidade}>
               <div className="flex mt-4 gap-4" >
@@ -36,7 +35,7 @@ const Apresentacao = () => {
                   <img className="mt-5 lg:mt-0 sm:w-auto animacaoToque" src={whatsapp} alt="whatsapp" />
                 </a>
               </div>
-              <a href={pdf} download className="mt-4 botao2 px-8 py-2 animacaoToque">Download do CV</a>
+              <a className="mt-4 botao2 px-8 py-2 animacaoToque">CV Download</a>
 
             </motion.div>
           </div>

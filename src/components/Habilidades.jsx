@@ -7,7 +7,7 @@ function Habilidades() {
   return (
     <section className="fundo2" id='habilidades'>
       <div className="container max-w-7xl mx-auto py-20">
-        <motion.h1 className='text-4xl mb-10 font-bold text-center' {...scalein}>Habilidades</motion.h1>
+        <motion.h1 className='text-4xl mb-10 font-bold text-center' {...scalein}>Skills</motion.h1>
         <div className='flex justify-center items-center'>
           <motion.div className='grid grid-cols-3 md:grid-cols-5 gap-5 lg:gap-20' {...opacidade}>
             <svg viewBox="0 0 128 128" className='icone' alt='react'>

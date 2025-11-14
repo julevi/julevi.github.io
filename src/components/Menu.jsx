@@ -42,10 +42,10 @@ const Menu = ({ darkMode, toggleDarkMode }) => {
         <div className="h-screen">
           <ul className='text-black text-center flex flex-col gap-5 text-3xl pt-28'>
             <li><a className='cursor-pointer font-bold listaMenu' onClick={() => { closeMenu(); scrollToSection('home') }}>Home</a></li>
-            <li><a className='cursor-pointer font-bold listaMenu' onClick={() => { closeMenu(); scrollToSection('sobre') }}>Sobre</a></li>
-            <li><a className='cursor-pointer font-bold listaMenu' onClick={() => { closeMenu(); scrollToSection('projetos') }}>Projetos</a></li>
-            <li><a className='cursor-pointer font-bold listaMenu' onClick={() => { closeMenu(); scrollToSection('habilidades') }}>Habilidades</a></li>
-            <li><a className='cursor-pointer font-bold listaMenu' onClick={() => { closeMenu(); scrollToSection('contato') }}>Contato</a></li>
+            <li><a className='cursor-pointer font-bold listaMenu' onClick={() => { closeMenu(); scrollToSection('sobre') }}>About me</a></li>
+            <li><a className='cursor-pointer font-bold listaMenu' onClick={() => { closeMenu(); scrollToSection('projetos') }}>Projects</a></li>
+            <li><a className='cursor-pointer font-bold listaMenu' onClick={() => { closeMenu(); scrollToSection('habilidades') }}>Skills</a></li>
+            <li><a className='cursor-pointer font-bold listaMenu' onClick={() => { closeMenu(); scrollToSection('contato') }}>Contact</a></li>
           </ul>
         </div>
       )}

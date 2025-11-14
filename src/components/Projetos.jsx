@@ -34,7 +34,7 @@ const Projetos = () => {
   return (
     <section className="fundo1 flex items-center justify-center py-20 px-7" id="projetos">
       <div className="container max-w-7xl mx-auto">
-        <motion.h1 className='text-4xl mb-10 font-bold text-center' {...scalein}>Projetos</motion.h1>
+        <motion.h1 className='text-4xl mb-10 font-bold text-center' {...scalein}>Projects</motion.h1>
         <div className='grid lg:grid-cols-3 gap-16 grid-col-1'>
           {projetos.map((projeto, index) => (
             <motion.div key={index} className='border border-azul flex flex-col items-center justify-center animacaoToque' {...opacidade}>
